@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CrudUsingJava</string>
+    <string name="welcome">Welcome Buddy</string>
+    <string name="welcome_para">Crud Using Api</string>
+    <string name="icons">Icons Here</string>
+    <string name="numbering">#1</string>
+    <string name="name">UserName</string>
+</resources>
