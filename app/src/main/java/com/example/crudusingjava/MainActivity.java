@@ -2,12 +2,10 @@ package com.example.crudusingjava;
 
 import android.app.Dialog;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -15,11 +13,9 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.crudusingjava.model.Category;
 import com.example.crudusingjava.model.CategoryAdapter;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
@@ -40,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
 
         refreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeDown);
         recyclerView = (RecyclerView) findViewById(R.id.category);
-        dialog= new Dialog(this);
+        dialog = new Dialog(this);
         refreshLayout.setOnRefreshListener(this);
         refreshLayout.post(new Runnable() {
             @Override
@@ -86,8 +82,9 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(categoryAdapter);
     }
+
     @Override
-    public void onRefresh () {
+    public void onRefresh() {
         categories.clear();
         getData();
     }
