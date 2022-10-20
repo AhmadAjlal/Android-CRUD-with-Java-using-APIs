@@ -29,7 +29,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/names"
+            android:id="@+id/name"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
